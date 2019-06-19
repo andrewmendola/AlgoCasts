@@ -12,6 +12,10 @@ class Queue {
   add(record) {
     this.data.unshift(record);
   }
+  
+  peek() {
+	  return this.data.length > 0 ? this.data[this.data.length - 1] : undefined;
+  }
 
   remove() {
     return this.data.pop();
